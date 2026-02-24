@@ -4,7 +4,7 @@ import { Register } from './pages/admin/Register'
 import { Login } from './pages/admin/Login'
 import { Dashboard } from './pages/admin/Dashboard'  // ✅ UNIQUEMENT Dashboard
 import { Produits as ProduitsPage } from './components/admin/Produits'  // ✅ CORRECT
-
+import { Sante as SantePage } from './components/admin/Sante'  // ✅ AJOUTEZ
 function AppContent() {
   return (
     <Router>
@@ -14,6 +14,8 @@ function AppContent() {
         <Route path="/admin/dashboard" element={<Dashboard />}>
           <Route index element={<ProduitsPage />} />        {/* Page d'accueil = Produits */}
           <Route path="produits" element={<ProduitsPage />} />
+          
+          <Route path="sante" element={<SantePage />} />
           {/* Futurs onglets */}
           <Route path="proprietaires" element={<div className="p-8 text-center"><h2>👨‍💼 Propriétaires bientôt !</h2></div>} />
           <Route path="boutiques" element={<div className="p-8 text-center"><h2>🏪 Boutiques bientôt !</h2></div>} />

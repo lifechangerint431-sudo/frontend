@@ -83,6 +83,13 @@ export const Dashboard = () => {
       onClick: () => navigate('/admin/dashboard/produits')
     },
     { 
+  key: 'sante', 
+  icon: <Heart className="w-5 h-5" />, 
+  label: '🏥 Santé',
+  path: '/admin/dashboard/sante'
+},
+
+    { 
       key: 'proprietaires', 
       icon: <User className="w-5 h-5" />, 
       label: 'Propriétaires',
